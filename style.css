@@ -107,20 +107,44 @@ section h2{
 
 .container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .quotes{
   background: rgb(236, 236, 236);
+  width: 25%;
+  height: auto;
   border-radius: 8px;
   margin-right: 25px;
   margin-left: 25px;
-  padding-top: 15px;
+  padding: 15px;
   font-size: 18px;
-  width: 100%;
   font-family:sans-serif;
   box-shadow: 5px 2px 1px  rgb(170, 170, 170);
   line-height: 25px;
   margin-bottom: 25px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 920px){
+  .quotes{
+    flex: 1 100%;
+
+  }
+}
+
+@media screen and (max-width: 620px){
+  .intro{
+    padding: 2px;
+  }
+  
+  #tribute-info{
+    margin-right: 50px;
+    margin-left: 50px;
+
+  }
 }
 
 footer{
